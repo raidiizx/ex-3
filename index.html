@@ -3,66 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Document</title>
     <style>
         * {
-            border: 1px solid red;
+            border: px solid red;
+            margin: 0;
+            padding: 0;
         }
 
+        .container {
+            display: flex;
+        }
+
+        .padding-content {
+            padding-left: 70px;
+            padding-top: 40px;
+        }        
+
         .header {
-            margin: 20px;
-            color: rgb(119, 119, 21);
+            display: flex;
             font-weight: bold;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(119, 119, 21);
+        }
+
+        .image-side {
+            position: relative;
         }
 
         .the-strom {
-            border: 9px solid red;
-            width: 50%;
+            float: left;
+            width: 100%;
+        }
+
+        .nav {
             display: flex;
-            position: absolute;
-            left: 0px;
+            justify-content: center;
+            border-bottom: 1px solid rgba(196, 181, 181, 0.589);
+            border-top: 1px solid rgba(196, 181, 181, 0.589);
+        }
+
+        .nav1 {
+            margin: 15px;
+            padding-right: 70px;
+            padding-left: 70px;
+            font-size: large;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 80% 0%;
         }
 
         .bottom-left {
             position: absolute;
-            bottom: -345px;
-            left: 25px;
+            bottom: 20px;
+            left: 20px;
+            color: whitesmoke;
         }
 
-        .dropdown1 {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown2 {
-            position: relative;
-            display: inline-block;
-        }
-
-        .menu {
-            color: rgb(212, 44, 212);
-        }
-
-        .test {
-            margin-right: 33.33%;
-        }
     </style>
 </head>
 
 <body>
     <!-- header -->
-    <p class="header">Heilbrunn Timeline Of Art History</p>
-    <!-- image side -->
-    <div>
-        <img src="rambrandt with licensed.jpg" alt="The Storm on the Sea of Galilee" class="the-strom">
+    <div class="header">
+        <p>Heilbrunn Timeline Of Art History</p>
+        <p>=</p>
     </div>
 
-    <div class="menu">
-        <span class="menu">Baroque Era</span>
-        <span class="menu">Dutch painters</span>
-        <span class="menu">Search</span>
+    <!-- Content -->
+    <div class="container">
+        <!-- image side -->
+        <div class="image-side">
+            <div class="bottom-left">The Storm on the Sea of Galilee</div>
+            <img src="Rembrandt-van-Rijn.webp" alt="The Storm on the Sea of Galilee" class="the-strom">
+        </div>
+        <!-- Menu/Nav -->
+        <div style="width: 50%;">
+            <div class="nav">
+                <div class="nav1">Baroque Era</div>
+                <div class="nav1">Dutch painters</div>
+                <div class="nav1">Search</div>
+            </div>
+            <!-- profile image -->
+            <div class="padding-content">
+                <img src="rambrandt profile with licensed.jpg" alt="profile" class="profile-pic">
+            <!-- year -->
+                <div style="padding-left: 40px; padding-top: 30px;">1606-1669</div>
+            <!-- aka -->
+                <h1 style="padding-top: 10px; font-size: 75px">Rembrandt</h1>
+            <!-- full name -->
+                <h4>Harmenszoon van Rijn</h4>
+                <h2>Description</h2>
+
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

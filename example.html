@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX-3</title>
+    <style>
+      * {
+        border: 1px solid red;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div>Something</div>
+      <div>=</div>
+    </div>
+    <!-- Body -->
+    <div style="display: flex">
+      <!-- Image -->
+      <div style="position: relative">
+        <div style="position: absolute; bottom: 20px; left: 20px; color: white">
+          Something is good.
+        </div>
+        <img src="summer.webp" alt="Summer" />
+      </div>
+      <!-- Main -->
+      <div style="width: 100%">
+        <!-- Nav -->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-top: 1px solid darkgrey;
+            border-bottom: 1px solid darkgrey;
+          "
+        >
+          <div style="margin: 0 10px 0 10px">Nav 1</div>
+          <div style="margin: 0 10px 0 10px">Nav 2</div>
+          <div style="margin: 0 10px 0 10px">Nav 3</div>
+        </div>
+        <!-- Content -->
+        <div style="padding: 50px">
+          <img
+            src="summer.webp"
+            alt="Summer Profile"
+            style="
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+              border-radius: 50%;
+              margin-bottom: 10px;
+              object-position: 25% 0%;
+            "
+          />
+          <div>11 Feb 2024</div>
+          <h1>Jimbo</h1>
+          <small>IT Expert</small>
+          <p style="margin-top: 20px">
+            Lorem ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
